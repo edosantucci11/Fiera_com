@@ -3,7 +3,7 @@
 <!-- Interviste Fiera – app del telefono in un unico file (generato da strumenti/costruisci_app.py). I campi della scheda sono nello script con id schema-scheda. -->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-VVTRzSsISOrc2zA/8XnAf9KOnmEQe7qCFrMQCpzTZFE=' 'sha256-EMuToTPSYJrcOL2Y3uB25W4wLP0JmZ0E9xCNj4C15GU=' 'sha256-FdM3RabaUVcJrnIQaDzGzF5FkdmdxJyTxjj4JE938BM=' 'sha256-1VfYTaKcPnOyXaE6dpWKDw68oOVmq0VUFt5BrEOmHm8=' 'sha256-AK//OcJEUhwH0Bc7FiWdvhh/+ysx7zNT7F4jRWdjY+M=' 'sha256-bna9o8oqfQkWjhmLbeF0P074UlkqOAmJkh3WGl9rMmI=' 'sha256-l9AgzJNE2xlT5Uqscn2WvgO1Th5NrobBEd9Zp+6rU2M=' 'sha256-hwVksVTLJal5nGiUXwmaCInLRWkAHsLLTBiLEeuI/68=' 'sha256-jvAyMjTSooxJzDDCwd1lTM1KYGElOC6WlfJP82vZgMc=' 'sha256-xNivlCXKH5r9vrm7NvMvsg9xDE0PJpOzNIGi52L1aGo=' 'sha256-sjdsNrHvNfObz2DBzWSdZRCgIcl1b5M1ofhxSoN6pRY=' 'sha256-Fog4vmyLGq7mhRjYaUxcAdJqUKgAq+CsTdZ7qo7eQxY=' 'sha256-TfYe4Jan0Y3GCAcol944jjIse3+Nvbe/2hq424Kkcaw=' 'sha256-oUaUCzTFl9eDKzFXhbnh4oG5dTNAgW1qVN2DBUjpe8E=' 'sha256-Qg0C0HMipaIDaOQfsqxbFJ74/NIPhjgxqbkJWaprErk=' 'sha256-F0xjjNLnrmrdbWu742J3ns2BVJvOVAKA7ag6YQbJX5U='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self' ; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-VVTRzSsISOrc2zA/8XnAf9KOnmEQe7qCFrMQCpzTZFE=' 'sha256-EMuToTPSYJrcOL2Y3uB25W4wLP0JmZ0E9xCNj4C15GU=' 'sha256-fYYAIsuONCHUUhmayg+Lfv/AfAITT6tI5UxZZMifvx0=' 'sha256-1VfYTaKcPnOyXaE6dpWKDw68oOVmq0VUFt5BrEOmHm8=' 'sha256-AK//OcJEUhwH0Bc7FiWdvhh/+ysx7zNT7F4jRWdjY+M=' 'sha256-bna9o8oqfQkWjhmLbeF0P074UlkqOAmJkh3WGl9rMmI=' 'sha256-l9AgzJNE2xlT5Uqscn2WvgO1Th5NrobBEd9Zp+6rU2M=' 'sha256-hwVksVTLJal5nGiUXwmaCInLRWkAHsLLTBiLEeuI/68=' 'sha256-jvAyMjTSooxJzDDCwd1lTM1KYGElOC6WlfJP82vZgMc=' 'sha256-xNivlCXKH5r9vrm7NvMvsg9xDE0PJpOzNIGi52L1aGo=' 'sha256-sjdsNrHvNfObz2DBzWSdZRCgIcl1b5M1ofhxSoN6pRY=' 'sha256-Fog4vmyLGq7mhRjYaUxcAdJqUKgAq+CsTdZ7qo7eQxY=' 'sha256-SZcAUWGfdCdYCGkl4WfXskRowuqaqSU/pGmancajX14=' 'sha256-s4mKvZxmN/L6xq7nlpEsGvHHxcw1GgoscwGf5cD+Ho0=' 'sha256-Qg0C0HMipaIDaOQfsqxbFJ74/NIPhjgxqbkJWaprErk=' 'sha256-KwMTHPNav6XYo9VoViGaTbdUSdmL1zlGnoCC6EMlTdc='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Interviste Fiera</title>
   <meta name="theme-color" content="#0F1115" media="(prefers-color-scheme: dark)">
@@ -11031,7 +11031,6 @@ function findAlignmentPattern(matrix, alignmentPatternQuads, topRight, topLeft, 
 window.APP_CONFIG = {
   // "server": invio al servizio aziendale (lo stesso server che pubblica l'app), con utente e password.
   // "demo": i dati restano sul dispositivo e l'invio e' simulato (per mostrare l'app senza server).
-  // "supabase": invio all'archivio aziendale su Supabase (sito di sole pagine, vedi supabase/GUIDA-SUPABASE.md).
   // "file": nessun invio in rete; la sera si esporta un file da importare nel gestionale sul condiviso (vedi docs/GUIDA-FILE.md).
   modalita: "file",
 
@@ -11065,15 +11064,6 @@ window.APP_CONFIG = {
     qualita: 0.8
   }
 };
-
-// Collegamento a Supabase (solo con modalita: "supabase"): indirizzo del progetto e chiave PUBBLICA (anon / publishable).
-// La chiave di servizio non va MAI messa qui. dominioUtenti deve essere uguale al segreto DOMINIO_UTENTI delle Edge Functions.
-window.APP_CONFIG.supabase = {
-  url: "",
-  chiave: "",
-  dominioUtenti: "utenti.interviste-fiera.local"
-};
-window.SUPABASE_CONFIG = Object.assign({ contesto: "app", versione: window.APP_CONFIG.versioneApp }, window.APP_CONFIG.supabase);
 
 </script>
   <script id="schema-scheda">
@@ -13325,7 +13315,6 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
 })();
 
 </script>
-  <!-- Collegamento a Supabase (modalità "supabase") -->
   <script>
 // Modalita' dimostrazione: simula il punto di raccolta sul dispositivo stesso.
 // Serve a provare l'app (coda, assenza di rete, conferme, import in sede) senza server.
@@ -13436,9 +13425,7 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
     if (corpo !== undefined) intestazioni["Content-Type"] = grezzo ? (tipo || "application/octet-stream") : "application/json";
     let r;
     try {
-      // con Supabase le stesse chiamate passano dal ponte (js/ponte-supabase.js) invece che dal servizio Python
-      const via = window.APP_CONFIG.modalita === "supabase" && window.IF_PONTE ? window.IF_PONTE.fetch : fetch;
-      r = await via(`${base()}/${percorso}`, {
+      r = await fetch(`${base()}/${percorso}`, {
         method: metodo, headers: intestazioni, cache: "no-store",
         body: corpo === undefined ? undefined : (grezzo ? corpo : JSON.stringify(corpo))
       });
@@ -13523,10 +13510,6 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
   window.IF = window.IF || {};
   window.IF.adapters = window.IF.adapters || {};
   window.IF.adapters.server = Server;
-  // modalita' "supabase": stesso funzionamento, i dati vanno al progetto Supabase dell'azienda
-  window.IF.adapters.supabase = Object.assign(Object.create(Server), {
-    descrizione: "Le schede vanno all'archivio aziendale su Supabase (serve internet quando si invia). Senza rete restano in coda sul telefono."
-  });
 })();
 
 </script>
@@ -13538,8 +13521,9 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
     nome: "file",
     descrizione: "Nessun invio in rete: le schede restano su questo telefono. La sera premi «Esporta» e passa il file in sede (sul condiviso, per email o Teams): il gestionale lo importa.",
     async init() {},
-    haAccesso() { return true; },
-    utente() { return null; },
+    // account del gestionale a cui il telefono è collegato (QR del profilo, pagina Utenti): resta salvato sul telefono
+    haAccesso() { return !!(IF.impostazioni.account && IF.impostazioni.account.id); },
+    utente() { const a = IF.impostazioni.account; return a && a.id ? { nome: a.nome, username: a.username } : null; },
     async accedi() {},
     async esci() {}
   };
@@ -13564,11 +13548,15 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
       r.readAsDataURL(blob);
     });
     const imp = IF.impostazioni;
+    const acc = imp.account;
+    if (!acc || !acc.id || !acc.chiave) throw new Error("Telefono non collegato: inquadra prima il QR del tuo account (Impostazioni › Account)");
     const testa = {
       formato: "interviste-fiera-esportazione", versioneFormato: 1,
       app: CFG.nomeApp, versioneApp: CFG.versioneApp, versioneScheda: S.versione,
       esportatoIl: new Date().toISOString(), dispositivo: imp.dispositivo || "",
-      compilatrice: imp.compilatrice || "", fiera: imp.fiera || "", tutte: !!tutte
+      compilatrice: acc.nome || imp.compilatrice || "", fiera: imp.fiera || "", tutte: !!tutte,
+      // il gestionale importa solo i file dei telefoni collegati a un account attivo
+      account: { id: acc.id, username: acc.username, nome: acc.nome }, chiave: acc.chiave
     };
     // il file si compone a pezzi: con molte note vocali una sola stringa enorme peserebbe troppo sul telefono
     const pezzi = [JSON.stringify(testa).slice(0, -1), ',"schede":', JSON.stringify(schede.map((s) => ({
@@ -13846,13 +13834,21 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
       if (s) avviso(`Arrivato il sunto: ${IF.titoloScheda(s, S)}`, "ok");
     });
     IF.Sync.ascolta(() => aggiornaStrisciaInvio());
-    // Aperta dal QR di attivazione (…/app/#attiva=codice): il codice si toglie subito dall'indirizzo
+    // Aperta dal QR (…/#attiva=codice, oppure …/#collega=codice del QR dell'account): il codice si toglie subito dall'indirizzo
     const codice = codiceAttivazione(location.hash) || codiceAttivazione(location.search);
-    if (codice) { try { history.replaceState(null, "", location.href.split("#")[0].split("?")[0]); } catch (e) { location.hash = ""; } }
-    window.addEventListener("hashchange", disegna);
+    const conto = FILE ? codiceAccount(location.hash) : null;
+    if (codice || conto) { try { history.replaceState(null, "", location.href.split("#")[0].split("?")[0]); } catch (e) { location.hash = ""; } }
+    if (conto) await collegaAccount(conto);
+    window.addEventListener("hashchange", async () => {
+      // QR dell'account aperto mentre l'app è già aperta (stessa pagina, cambia solo la parte dopo #)
+      const nuovo = FILE ? codiceAccount(location.hash) : null;
+      if (nuovo) { try { history.replaceState(null, "", location.href.split("#")[0] + "#lista"); } catch (e) {} await collegaAccount(nuovo); }
+      disegna();
+    });
     disegna();
     if (IF.adapter && !FILE) IF.Sync.avvia();
     if (FILE) promemoriaSerale();
+    if (conto && !inApp()) setTimeout(() => guidaInstallazione(suIPhone()), 900);
     if (codice) {
       if (suIPhone() && !inApp()) guidaInstallazione(true); // il codice si usa poi dall'app installata
       else {
@@ -13885,6 +13881,34 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
       return true;
     } catch (e) { avviso(e.message, "errore"); return false; }
   }
+  // QR dell'account (versione sul condiviso): {v, i: id, u: utente, n: nome, k: chiave del telefono} in base64url
+  function codiceAccount(testo) {
+    const m = String(testo || "").match(/[#&?]collega=([A-Za-z0-9_-]{20,600})/);
+    if (!m) return null;
+    try {
+      const t = m[1].replace(/-/g, "+").replace(/_/g, "/");
+      const j = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(t), (c) => c.charCodeAt(0))));
+      if (j.v !== 1 || !/^[A-Za-z0-9_-]{4,40}$/.test(j.i) || !/^[A-Za-z0-9_-]{16,60}$/.test(j.k) || !String(j.n || "").trim()) return null;
+      return { id: j.i, username: String(j.u || "").slice(0, 40), nome: String(j.n).trim().slice(0, 120), chiave: j.k };
+    } catch (e) { return null; }
+  }
+  async function collegaAccount(a) {
+    const prima = IF.impostazioni.account;
+    IF.impostazioni.account = { ...a, il: new Date().toISOString() };
+    IF.impostazioni.compilatrice = a.nome;
+    await salvaImpostazioni();
+    avviso(prima && prima.id && prima.id !== a.id ? `Telefono collegato all'account di ${a.nome} (prima: ${prima.nome})`
+      : `Benvenuta, ${a.nome.split(" ")[0]}: telefono collegato`, "ok");
+    aggiornaStrisciaInvio(); aggiornaTabbar();
+  }
+  async function collegaDaScansione() {
+    const testo = await IF.QR.apri("il QR del tuo account, nella pagina Utenti del gestionale");
+    if (!testo) return false;
+    const a = codiceAccount(testo);
+    if (!a) { avviso("Questo non è il QR di un account: chiedi in sede il «QR del telefono» del tuo account", "errore"); return false; }
+    await collegaAccount(a);
+    return true;
+  }
   async function attivaDaScansione() {
     const testo = await IF.QR.apri("il QR di attivazione mostrato in sede");
     if (!testo) return;
@@ -13900,7 +13924,7 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
         <ol class="passi-installa">
           <li>Tocca <strong>Condividi</strong> nella barra di Safari (il quadrato con la freccia verso l'alto).</li>
           <li>Scegli <strong>«Aggiungi alla schermata Home»</strong> e poi <strong>«Aggiungi»</strong>.</li>
-          <li>Apri <strong>Interviste</strong> dall'icona${dopoIPhone ? `, tocca <strong>«Attiva con il QR»</strong> e inquadra di nuovo lo stesso QR` : FILE ? " e imposta fiera e nome in Impostazioni" : " ed entra con il tuo utente"}.</li>
+          <li>Apri <strong>Interviste</strong> dall'icona${dopoIPhone ? `, tocca <strong>${FILE ? "«Inquadra il QR del tuo account»" : "«Attiva con il QR»"}</strong> e inquadra di nuovo lo stesso QR` : FILE ? " e imposta la fiera in Impostazioni" : " ed entra con il tuo utente"}.</li>
         </ol>
         ${dopoIPhone ? `<p class="nota">Su iPhone l'app sulla schermata Home tiene i suoi dati separati da Safari: per questo il collegamento si fa dall'icona.</p>` : ""}`
       : richiestaInstallazione ? `
@@ -13946,6 +13970,7 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
       if (pulisciVista) { pulisciVista(); pulisciVista = null; }
       window.scrollTo(0, 0);
       aggiornaTabbar();
+      if (daCollegare()) return vistaCollega();
       if (v === "scheda") return vistaScheda(decodeURIComponent(location.hash.slice(8)));
       if (v === "impostazioni") return vistaImpostazioni();
       if (v === "riepilogo") return vistaRiepilogo();
@@ -14005,7 +14030,7 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
   async function aggiornaTabbar() {
     const nav = document.getElementById("tabbar");
     const v = vistaCorrente();
-    nav.hidden = v === "scheda";
+    nav.hidden = v === "scheda" || daCollegare();
     if (nav.hidden) return;
     costruisciTabbar();
     segnaTab(v);
@@ -14067,6 +14092,23 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
     barra.innerHTML = `
       <span class="targa-logo"><img src="${LOGO}" alt="Assut Europe – Suture chirurgiche" width="124" height="28"></span>
       ${IF.impostazioni.fiera ? `<span class="chip-fiera">${icona("luogo")}<span>${h(IF.impostazioni.fiera)}</span></span>` : ""}`;
+  }
+
+  // ---------- Versione sul condiviso: l'app si usa dopo aver inquadrato il QR del proprio account ----------
+  const daCollegare = () => FILE && !!IF.adapter && !IF.adapter.haAccesso();
+  function vistaCollega() {
+    barraPrincipale();
+    vista.innerHTML = `
+      <header class="titolo-grande"><h1>Collega il telefono</h1></header>
+      <section class="gruppo">
+        <p>Per usare l'app inquadra il <strong>QR del tuo account</strong>. Te lo mostra in sede chi gestisce il gestionale (pagina Utenti).</p>
+        <button class="btn btn-primario" type="button" id="btnCollega">${icona("qr")}<span>Inquadra il QR del tuo account</span></button>
+        <p class="nota">Si fa una volta sola: il collegamento resta salvato su questo telefono. Il tuo nome viene messo da solo su ogni scheda.</p>
+      </section>
+      ${!inApp() ? `<section class="gruppo"><button class="btn btn-secondario" type="button" id="btnInstalla">Installa l'app sulla schermata Home</button></section>` : ""}`;
+    document.getElementById("btnCollega").onclick = async () => { if (await collegaDaScansione()) disegna(); };
+    const bin = document.getElementById("btnInstalla");
+    if (bin) bin.onclick = () => guidaInstallazione(false);
   }
 
   // ---------- Esempi per la modalita' dimostrazione ----------
@@ -14267,7 +14309,7 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
       out.push({ icona: "attenzione", classe: "errore", testo: "Entra con il tuo utente", sotto: "Serve una volta sola, poi le schede partono da sole", azione: "Entra", href: "#impostazioni" });
     }
     if (!IF.impostazioni.fiera || !IF.impostazioni.compilatrice) {
-      out.push({ icona: "ingranaggio", testo: "Imposta fiera e nome", sotto: "Vengono aggiunti a ogni nuova scheda", azione: "Imposta", href: "#impostazioni" });
+      out.push({ icona: "ingranaggio", testo: FILE ? "Imposta la fiera" : "Imposta fiera e nome", sotto: "Viene aggiunta a ogni nuova scheda", azione: "Imposta", href: "#impostazioni" });
     }
     const daEsportare = schede.filter((s) => s.stato === "in_coda" && !s.esempio).length;
     if (FILE && daEsportare && new Date().getHours() >= 17) {
@@ -15185,7 +15227,7 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
   async function vistaImpostazioni() {
     const c = await conteggi();
     const ocrPronto = !!window.SIM_OCR || await DB.leggi("ocr-pronto", false);
-    const sp = CFG.modalita === "server" || CFG.modalita === "supabase";
+    const sp = CFG.modalita === "server" || FILE;
     const u = IF.adapter && IF.adapter.utente();
     barraPrincipale();
     vista.innerHTML = `
@@ -15196,11 +15238,17 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
           <input id="impFiera" type="text" value="${h(IF.impostazioni.fiera)}" autocomplete="off"></div>
         <div class="campo"><label class="etichetta" for="impComp">Compilata da</label>
           <input id="impComp" type="text" value="${h(IF.impostazioni.compilatrice)}" ${sp && u ? "readonly" : ""} autocomplete="off">
-          ${sp && u ? `<p class="nota">Preso dal tuo utente.</p>` : ""}</div>
+          ${sp && u ? `<p class="nota">Preso dal tuo ${FILE ? "account" : "utente"}.</p>` : ""}</div>
         <p class="nota">Vengono aggiunti a ogni nuova scheda.</p>
       </section>
 
       ${FILE ? `<section class="gruppo">
+        <h2>Account</h2>
+        ${u ? `<p class="avviso ok">${icona("spunta")}<span>Telefono collegato all'account di <strong>${h(u.nome)}</strong>${u.username ? ` (${h(u.username)})` : ""}</span></p>` : ""}
+        <button class="btn btn-secondario" type="button" id="btnCollegaImp">${icona("qr")}<span>Inquadra un altro QR</span></button>
+        <p class="nota">Serve solo se in sede ti danno un nuovo QR (per esempio dopo un cambio di telefono) o se il telefono passa a un'altra collega. Le schede già salvate restano qui.</p>
+      </section>
+      <section class="gruppo">
         <h2>Passaggio in sede</h2>
         <p>Le schede restano su questo telefono, anche senza rete. La sera premi <strong>«Esporta»</strong>: si prepara un file con le schede complete, le note vocali e le foto. Mandalo o salvalo dove ti hanno detto in sede (cartella condivisa, email, Teams): il gestionale lo importa.</p>
         <div class="pila">
@@ -15324,6 +15372,8 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
         vistaImpostazioni();
       } catch (e) { avviso(e.message, "errore"); }
     });
+    const bcq = document.getElementById("btnCollegaImp");
+    if (bcq) bcq.onclick = async () => { if (await collegaDaScansione()) vistaImpostazioni(); };
     const baq = document.getElementById("btnAttivaQr");
     if (baq) baq.onclick = attivaDaScansione;
     const bin = document.getElementById("btnInstalla");
