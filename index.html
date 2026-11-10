@@ -3,7 +3,7 @@
 <!-- Interviste Fiera – app del telefono in un unico file (generato da strumenti/costruisci_app.py). I campi della scheda sono nello script con id schema-scheda. -->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-VVTRzSsISOrc2zA/8XnAf9KOnmEQe7qCFrMQCpzTZFE=' 'sha256-EMuToTPSYJrcOL2Y3uB25W4wLP0JmZ0E9xCNj4C15GU=' 'sha256-fYYAIsuONCHUUhmayg+Lfv/AfAITT6tI5UxZZMifvx0=' 'sha256-1VfYTaKcPnOyXaE6dpWKDw68oOVmq0VUFt5BrEOmHm8=' 'sha256-AK//OcJEUhwH0Bc7FiWdvhh/+ysx7zNT7F4jRWdjY+M=' 'sha256-bna9o8oqfQkWjhmLbeF0P074UlkqOAmJkh3WGl9rMmI=' 'sha256-l9AgzJNE2xlT5Uqscn2WvgO1Th5NrobBEd9Zp+6rU2M=' 'sha256-hwVksVTLJal5nGiUXwmaCInLRWkAHsLLTBiLEeuI/68=' 'sha256-jvAyMjTSooxJzDDCwd1lTM1KYGElOC6WlfJP82vZgMc=' 'sha256-xNivlCXKH5r9vrm7NvMvsg9xDE0PJpOzNIGi52L1aGo=' 'sha256-sjdsNrHvNfObz2DBzWSdZRCgIcl1b5M1ofhxSoN6pRY=' 'sha256-Fog4vmyLGq7mhRjYaUxcAdJqUKgAq+CsTdZ7qo7eQxY=' 'sha256-SZcAUWGfdCdYCGkl4WfXskRowuqaqSU/pGmancajX14=' 'sha256-s4mKvZxmN/L6xq7nlpEsGvHHxcw1GgoscwGf5cD+Ho0=' 'sha256-Qg0C0HMipaIDaOQfsqxbFJ74/NIPhjgxqbkJWaprErk=' 'sha256-KwMTHPNav6XYo9VoViGaTbdUSdmL1zlGnoCC6EMlTdc='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-VVTRzSsISOrc2zA/8XnAf9KOnmEQe7qCFrMQCpzTZFE=' 'sha256-EMuToTPSYJrcOL2Y3uB25W4wLP0JmZ0E9xCNj4C15GU=' 'sha256-fPHocuX8/yRtI/pHJNC9edLqxsLg+YpRz20sGcMqnb8=' 'sha256-1VfYTaKcPnOyXaE6dpWKDw68oOVmq0VUFt5BrEOmHm8=' 'sha256-dMf07uwFiFzGgjB1UEeYKjKu5uobH4fKqEVS/UlkytI=' 'sha256-bna9o8oqfQkWjhmLbeF0P074UlkqOAmJkh3WGl9rMmI=' 'sha256-l9AgzJNE2xlT5Uqscn2WvgO1Th5NrobBEd9Zp+6rU2M=' 'sha256-hwVksVTLJal5nGiUXwmaCInLRWkAHsLLTBiLEeuI/68=' 'sha256-jvAyMjTSooxJzDDCwd1lTM1KYGElOC6WlfJP82vZgMc=' 'sha256-xNivlCXKH5r9vrm7NvMvsg9xDE0PJpOzNIGi52L1aGo=' 'sha256-sjdsNrHvNfObz2DBzWSdZRCgIcl1b5M1ofhxSoN6pRY=' 'sha256-Fog4vmyLGq7mhRjYaUxcAdJqUKgAq+CsTdZ7qo7eQxY=' 'sha256-SZcAUWGfdCdYCGkl4WfXskRowuqaqSU/pGmancajX14=' 'sha256-s4mKvZxmN/L6xq7nlpEsGvHHxcw1GgoscwGf5cD+Ho0=' 'sha256-Qg0C0HMipaIDaOQfsqxbFJ74/NIPhjgxqbkJWaprErk=' 'sha256-vC4Darp/EVQqELWJlznUWWzwfKRGLnVXBvQsoAdVwmo='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Interviste Fiera</title>
   <meta name="theme-color" content="#0F1115" media="(prefers-color-scheme: dark)">
@@ -710,7 +710,7 @@ input[readonly] { color: var(--t3); }
 .conteggio-info { margin: 0; font-size: 0.8125rem; color: var(--t3); font-variant-numeric: tabular-nums; }
 .pila-info { display: flex; flex-direction: column; gap: 16px; }
 .riga-prezzo { width: 100%; border: 0; background: none; font: inherit; text-align: left; cursor: pointer; min-height: 56px; }
-.prezzo { flex: none; font-weight: 650; font-variant-numeric: tabular-nums; }
+.prezzo { flex: none; max-width: 55%; text-align: right; font-weight: 650; font-variant-numeric: tabular-nums; }
 .prezzo.manca { color: var(--accent-testo); font-weight: 600; font-size: 0.875rem; }
 .riga-comandi { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .pila-gruppi { display: flex; flex-direction: column; gap: 8px; }
@@ -728,7 +728,7 @@ input[readonly] { color: var(--t3); }
 .mappa-vista svg { width: 100%; height: 100%; display: block; }
 .mappa-vista .paese { fill: var(--mappa-terra); stroke: var(--mappa-confine); stroke-width: 0.6; vector-effect: non-scaling-stroke; transition: opacity .2s; }
 .mappa-vista .paese.con-dati { cursor: pointer; }
-.mappa-vista .paese.esclusivo { fill: var(--accent); }
+.mappa-vista .paese.esclusivo { fill: var(--err); }
 .mappa-vista .paese.non_esclusivo { fill: var(--ok); }
 .mappa-vista .paese.registrazione { fill: var(--att); }
 .mappa-vista .paese.non_indicato { fill: var(--t3); }
@@ -747,7 +747,7 @@ input[readonly] { color: var(--t3); }
 .filtri-info { gap: 6px; }
 .filtri-info .scelta { min-height: 36px; padding: 6px 12px; font-size: 0.875rem; }
 .pallino-accordo { display: inline-block; width: 10px; height: 10px; border-radius: 50%; flex: none; background: var(--t3); }
-.pallino-accordo.esclusivo { background: var(--accent); }
+.pallino-accordo.esclusivo { background: var(--err); }
 .pallino-accordo.non_esclusivo { background: var(--ok); }
 .pallino-accordo.registrazione { background: var(--att); }
 .carta-paese { display: flex; flex-direction: column; gap: 12px; padding: 16px; background: var(--s1); border-radius: var(--r-q); }
@@ -757,7 +757,10 @@ input[readonly] { color: var(--t3); }
 .accordo-paese { display: flex; flex-direction: column; gap: 8px; }
 .accordo-paese + .accordo-paese { padding-top: 12px; border-top: 1px solid var(--bordo); }
 .pillola-accordo { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; font-size: 0.8125rem; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--s2); color: var(--t1); }
-.pillola-accordo.esclusivo { background: var(--accent-tenue); }
+.pillola-accordo.esclusivo { background: var(--err-t); }
+.prezzo-mio { display: block; font-size: 0.6875rem; font-weight: 600; color: var(--accent-testo); text-align: right; text-transform: uppercase; letter-spacing: .04em; }
+.listino-foglio { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 10px 12px; border-radius: var(--r-c); background: var(--s2); margin: 4px 0 12px; }
+.listino-foglio strong { font-variant-numeric: tabular-nums; text-align: right; }
 .pillola-accordo.non_esclusivo { background: var(--ok-t); }
 .pillola-accordo.registrazione { background: var(--att-t); }
 .linee { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -11035,7 +11038,7 @@ window.APP_CONFIG = {
   modalita: "file",
 
   nomeApp: "Interviste Fiera",
-  versioneApp: "1.7.0",
+  versioneApp: "1.7.2",
 
   // Indirizzo delle funzioni del server, relativo alla pagina dell'app (/app/ -> /api/).
   server: {
@@ -11186,7 +11189,7 @@ window.SCHEDA_SCHEMA = {
 </script>
   <script>
 // Dati della sezione Info, generati da strumenti/info_da_excel.py (non modificare a mano).
-// Nessun prezzo: i prezzi li scrive ogni collega nell'app e restano sul suo telefono.
+// Il listino della sede è dentro l'app pubblicata; i prezzi scritti da una collega restano sul suo telefono.
 window.IF_INFO_DATI = {
  "generatoIl": "2026-11-10",
  "prezzi": {
@@ -11196,15 +11199,18 @@ window.IF_INFO_DATI = {
     "voci": [
      {
       "id": "FILBLOC|stand",
-      "nome": "stand"
+      "nome": "stand",
+      "listino": "12-14,00 €"
      },
      {
       "id": "FILBLOC|LOOP",
-      "nome": "LOOP"
+      "nome": "LOOP",
+      "listino": "25,00 €"
      },
      {
       "id": "FILBLOC|REPERE",
-      "nome": "REPERE"
+      "nome": "REPERE",
+      "listino": "20,00 €"
      }
     ]
    },
@@ -11213,15 +11219,18 @@ window.IF_INFO_DATI = {
     "voci": [
      {
       "id": "ASSUMESH|6X11",
-      "nome": "6X11"
+      "nome": "6X11",
+      "listino": "12,00 €"
      },
      {
       "id": "ASSUMESH|15X15",
-      "nome": "15X15"
+      "nome": "15X15",
+      "listino": "17,00 €"
      },
      {
       "id": "ASSUMESH|30X30",
-      "nome": "30X30"
+      "nome": "30X30",
+      "listino": "25,00 €"
      }
     ]
    },
@@ -11230,15 +11239,18 @@ window.IF_INFO_DATI = {
     "voci": [
      {
       "id": "SORBIMESH|6X11",
-      "nome": "6X11"
+      "nome": "6X11",
+      "listino": "35,00 €"
      },
      {
       "id": "SORBIMESH|15X15",
-      "nome": "15X15"
+      "nome": "15X15",
+      "listino": "50,00 €"
      },
      {
       "id": "SORBIMESH|30X30",
-      "nome": "30X30"
+      "nome": "30X30",
+      "listino": "150,00 €"
      }
     ]
    },
@@ -11247,7 +11259,8 @@ window.IF_INFO_DATI = {
     "voci": [
      {
       "id": "KIT AG-01|",
-      "nome": ""
+      "nome": "",
+      "listino": "300,00 €"
      }
     ]
    },
@@ -11256,71 +11269,88 @@ window.IF_INFO_DATI = {
     "voci": [
      {
       "id": "EMOSTATICI|garza 5X7",
-      "nome": "garza 5X7"
+      "nome": "garza 5X7",
+      "listino": "3,00 €"
      },
      {
       "id": "EMOSTATICI|garza 5X35",
-      "nome": "garza 5X35"
+      "nome": "garza 5X35",
+      "listino": "9,00 €"
      },
      {
       "id": "EMOSTATICI|garza 10X20",
-      "nome": "garza 10X20"
+      "nome": "garza 10X20",
+      "listino": "9,00 €"
      },
      {
       "id": "EMOSTATICI|fibr 2,5X5",
-      "nome": "fibr 2,5X5"
+      "nome": "fibr 2,5X5",
+      "listino": "14,00 €"
      },
      {
       "id": "EMOSTATICI|fibr 5X10",
-      "nome": "fibr 5X10"
+      "nome": "fibr 5X10",
+      "listino": "30,00 €"
      },
      {
       "id": "EMOSTATICI|fibr 10X10",
-      "nome": "fibr 10X10"
+      "nome": "fibr 10X10",
+      "listino": "45,00 €"
      },
      {
       "id": "EMOSTATICI|polv 02gr",
-      "nome": "polv 02gr"
+      "nome": "polv 02gr",
+      "listino": "20,00 €"
      },
      {
       "id": "EMOSTATICI|polv 03gr",
-      "nome": "polv 03gr"
+      "nome": "polv 03gr",
+      "listino": "50,00 €"
      },
      {
       "id": "EMOSTATICI|gel 03gr",
-      "nome": "gel 03gr"
+      "nome": "gel 03gr",
+      "listino": "60,00 €"
      },
      {
       "id": "EMOSTATICI|gel 06gr",
-      "nome": "gel 06gr"
+      "nome": "gel 06gr",
+      "listino": "80,00 €"
      },
      {
       "id": "EMOSTATICI|gel 10gr",
-      "nome": "gel 10gr"
+      "nome": "gel 10gr",
+      "listino": "100,00 €"
      },
      {
       "id": "EMOSTATICI|kit 03gr+appl",
-      "nome": "kit 03gr+appl"
+      "nome": "kit 03gr+appl",
+      "listino": "90,00 €"
      },
      {
       "id": "EMOSTATICI|kit 06gr+appl",
-      "nome": "kit 06gr+appl"
+      "nome": "kit 06gr+appl",
+      "listino": "110,00 €"
      },
      {
       "id": "EMOSTATICI|kit 10gr+appl",
-      "nome": "kit 10gr+appl"
+      "nome": "kit 10gr+appl",
+      "listino": "130,00 €"
      },
      {
       "id": "EMOSTATICI|tidespon film",
-      "nome": "tidespon film"
+      "nome": "tidespon film",
+      "listino": "3,26 €"
      },
      {
       "id": "EMOSTATICI|tidespon",
-      "nome": "tidespon"
+      "nome": "tidespon",
+      "listino": "1,80 €"
      },
      {
       "id": "EMOSTATICI|80x30x00",
-      "nome": "80x30x00"
+      "nome": "80x30x00",
+      "listino": "3,70 €"
      }
     ]
    },
@@ -11329,7 +11359,8 @@ window.IF_INFO_DATI = {
     "voci": [
      {
       "id": "polv 02gr",
-      "nome": ""
+      "nome": "",
+      "listino": "7,70 €"
      }
     ]
    },
@@ -11338,11 +11369,13 @@ window.IF_INFO_DATI = {
     "voci": [
      {
       "id": "ULTRAFIBER|montato",
-      "nome": "montato"
+      "nome": "montato",
+      "listino": "11,00 (St) - 18,00 (loop) €"
      },
      {
       "id": "ULTRAFIBER|TAPE",
-      "nome": "TAPE"
+      "nome": "TAPE",
+      "listino": "30,00 €"
      }
     ]
    },
@@ -11351,43 +11384,53 @@ window.IF_INFO_DATI = {
     "voci": [
      {
       "id": "SUTURA|PGLA",
-      "nome": "PGLA"
+      "nome": "PGLA",
+      "listino": "1,62 - 1,76 €"
      },
      {
       "id": "SUTURA|PGA",
-      "nome": "PGA"
+      "nome": "PGA",
+      "listino": "1,45 - 1,55 €"
      },
      {
       "id": "SUTURA|PGCL",
-      "nome": "PGCL"
+      "nome": "PGCL",
+      "listino": "1,81-1,95 €"
      },
      {
       "id": "SUTURA|PDO",
-      "nome": "PDO"
+      "nome": "PDO",
+      "listino": "1,70 - 1,64 €"
      },
      {
       "id": "SUTURA|SETA",
-      "nome": "SETA"
+      "nome": "SETA",
+      "listino": "1,05 - 1,17 €"
      },
      {
       "id": "SUTURA|KIT/6 TEF",
-      "nome": "KIT/6 TEF"
+      "nome": "KIT/6 TEF",
+      "listino": "25,00 €"
      },
      {
       "id": "SUTURA|NYLON",
-      "nome": "NYLON"
+      "nome": "NYLON",
+      "listino": "1,15 €"
      },
      {
       "id": "SUTURA|POLIP",
-      "nome": "POLIP"
+      "nome": "POLIP",
+      "listino": "1,29 - 1,18 €"
      },
      {
       "id": "SUTURA|ACC",
-      "nome": "ACC"
+      "nome": "ACC",
+      "listino": "6,00 €"
      },
      {
       "id": "SUTURA|TIT",
-      "nome": "TIT"
+      "nome": "TIT",
+      "listino": "10,00 €"
      }
     ]
    },
@@ -11396,35 +11439,43 @@ window.IF_INFO_DATI = {
     "voci": [
      {
       "id": "ALTRI|CRAN",
-      "nome": "CRAN"
+      "nome": "CRAN",
+      "listino": "38,00 €"
      },
      {
       "id": "ALTRI|DRAIN",
-      "nome": "DRAIN"
+      "nome": "DRAIN",
+      "listino": "180,00 €"
      },
      {
       "id": "ALTRI|FLEX/10",
-      "nome": "FLEX/10"
+      "nome": "FLEX/10",
+      "listino": "5,00 €"
      },
      {
       "id": "ALTRI|EXOF/10",
-      "nome": "EXOF/10"
+      "nome": "EXOF/10",
+      "listino": "5,00 €"
      },
      {
       "id": "ALTRI|EXOF/2",
-      "nome": "EXOF/2"
+      "nome": "EXOF/2",
+      "listino": "50,00 €"
      },
      {
       "id": "ALTRI|EXOF/60CM/2",
-      "nome": "EXOF/60CM/2"
+      "nome": "EXOF/60CM/2",
+      "listino": "114,00 €"
      },
      {
       "id": "ALTRI|PLEDGET 3X5 (6UN)",
-      "nome": "PLEDGET 3X5 (6UN)"
+      "nome": "PLEDGET 3X5 (6UN)",
+      "listino": "26,00 €"
      },
      {
       "id": "ALTRI|PLEDGET 15X1,2",
-      "nome": "PLEDGET 15X1,2"
+      "nome": "PLEDGET 15X1,2",
+      "listino": "50,00 €"
      }
     ]
    },
@@ -11433,27 +11484,33 @@ window.IF_INFO_DATI = {
     "voci": [
      {
       "id": "BIORIPAR|dentale (<>)",
-      "nome": "dentale (<>)"
+      "nome": "dentale (<>)",
+      "listino": "46 (1) - 120(3) €"
      },
      {
       "id": "BIORIPAR|6x8",
-      "nome": "6x8"
+      "nome": "6x8",
+      "listino": "660,00 €"
      },
      {
       "id": "BIORIPAR|ovale",
-      "nome": "ovale"
+      "nome": "ovale",
+      "listino": "1.500,00 €"
      },
      {
       "id": "BIORIPAR|semilunari(<>)",
-      "nome": "semilunari(<>)"
+      "nome": "semilunari(<>)",
+      "listino": "1300-2500 €"
      },
      {
       "id": "BIORIPAR|derma 8x18",
-      "nome": "derma 8x18"
+      "nome": "derma 8x18",
+      "listino": "450,00 €"
      },
      {
       "id": "BIORIPAR|derma 30x30",
-      "nome": "derma 30x30"
+      "nome": "derma 30x30",
+      "listino": "3.000,00 €"
      }
     ]
    },
@@ -11462,7 +11519,8 @@ window.IF_INFO_DATI = {
     "voci": [
      {
       "id": "CERA|2,5GR",
-      "nome": "2,5GR"
+      "nome": "2,5GR",
+      "listino": "1,54 €"
      }
     ]
    },
@@ -11471,7 +11529,8 @@ window.IF_INFO_DATI = {
     "voci": [
      {
       "id": "ENDO360/ SUTURA|",
-      "nome": ""
+      "nome": "",
+      "listino": "2.500,00 € · 35€ /UNIT"
      }
     ]
    },
@@ -11480,7 +11539,8 @@ window.IF_INFO_DATI = {
     "voci": [
      {
       "id": "ENDOLOOP|",
-      "nome": ""
+      "nome": "",
+      "listino": ""
      }
     ]
    },
@@ -11489,7 +11549,8 @@ window.IF_INFO_DATI = {
     "voci": [
      {
       "id": "ANOSCOPIO|",
-      "nome": ""
+      "nome": "",
+      "listino": ""
      }
     ]
    },
@@ -11498,7 +11559,8 @@ window.IF_INFO_DATI = {
     "voci": [
      {
       "id": "SUTURATRICI BLUESEAL|",
-      "nome": ""
+      "nome": "",
+      "listino": "2,90 €"
      }
     ]
    }
@@ -15436,9 +15498,9 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
     avviso("Copia di emergenza creata");
   }
 
-  // ---------- Info: prezzi Assut (scritti dalla collega, solo su questo telefono) e rete commerciale ----------
-  // I dati fissi (prodotti senza prezzi, paesi, distributori) arrivano da info-dati.js, generato dagli Excel della sede.
-  // I prezzi stanno nel database del telefono («info-prezzi»): non vanno nel file esportato né in rete.
+  // ---------- Info: prezzi Assut (listino della sede, più quelli scritti dalla collega) e rete commerciale ----------
+  // I dati fissi (prodotti con il listino, paesi, distributori) arrivano da info-dati.js, generato dagli Excel della sede.
+  // I prezzi scritti dalla collega stanno nel database del telefono («info-prezzi»): non vanno nel file esportato né in rete.
   const INFO = window.IF_INFO_DATI || { prezzi: { gruppi: [] }, rete: { aree: [], paesi: [], distributori: {}, accordi: {}, referenti: {} } };
   const infoStato = { cerca: { prezzi: "", rete: "" }, soloPrezzo: false, area: "", accordo: "" };
   const normalizzaTesto = (t) => String(t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -15456,10 +15518,11 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
     const aperti = new Set(await DB.leggi("info-gruppi-aperti", []));
     const gruppi = INFO.prezzi.gruppi;
     const tot = gruppi.reduce((n, g) => n + g.voci.length, 0);
-    const haPrezzo = (v) => !!(prezzi[v.id] && prezzi[v.id].prezzo);
+    const proprio = (v) => !!(prezzi[v.id] && prezzi[v.id].prezzo);
+    const haPrezzo = (v) => proprio(v) || !!v.listino;
     const conPrezzo = gruppi.reduce((n, g) => n + g.voci.filter(haPrezzo).length, 0);
     vista.innerHTML = `${testa}
-      <p class="avviso">${icona("info")}<span>I prezzi li scrivi tu: tocca una voce. Restano solo su questo telefono e non entrano nel file per la sede.</span></p>
+      <p class="avviso">${icona("info")}<span>Prezzi del listino della sede. Tocca una voce per scrivere un tuo prezzo o una nota: restano solo su questo telefono e non entrano nel file per la sede.</span></p>
       <div class="barra-info">
         <input id="cercaPrezzi" type="search" placeholder="Cerca un prodotto" aria-label="Cerca un prodotto" value="${h(infoStato.cerca.prezzi)}" autocomplete="off">
         <label class="spunta-info"><input type="checkbox" id="soloPrezzo" ${infoStato.soloPrezzo ? "checked" : ""}> Solo con prezzo</label>
@@ -15484,9 +15547,11 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
             ${icona("giu")}</button>
           ${aperto ? `<ul class="elenco">${voci.map((v) => {
             const x = prezzi[v.id] || {};
+            const mio = !!x.prezzo;
+            const sotto = [mio && v.listino ? `Listino: ${v.listino}` : "", x.nota || ""].filter(Boolean).join(" · ");
             return `<li><button class="riga riga-prezzo" type="button" data-voce="${h(v.id)}">
-              <span class="riga-corpo"><span class="riga-titolo">${h(v.nome || g.nome)}</span>${x.nota ? `<span class="riga-sotto">${h(x.nota)}</span>` : ""}</span>
-              <span class="prezzo${x.prezzo ? "" : " manca"}">${x.prezzo ? h(formattaPrezzo(x.prezzo)) : "Aggiungi"}</span></button></li>`;
+              <span class="riga-corpo"><span class="riga-titolo">${h(v.nome || g.nome)}</span>${sotto ? `<span class="riga-sotto">${h(sotto)}</span>` : ""}</span>
+              <span class="prezzo${mio || v.listino ? "" : " manca"}">${mio ? `${h(formattaPrezzo(x.prezzo))}<small class="prezzo-mio">tuo</small>` : v.listino ? h(v.listino) : "Aggiungi"}</span></button></li>`;
           }).join("")}</ul>` : ""}
         </section>`;
       }).join("");
@@ -15519,14 +15584,15 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
       const v = g.voci.find((x) => x.id === id);
       const x = prezzi[id] || {};
       const { d, chiudi } = apriFoglio(`<h2 class="maiuscolo">${h(v.nome ? `${g.nome} · ${v.nome}` : g.nome)}</h2>
-        <div class="campo"><label class="etichetta" for="ipPrezzo">Prezzo (€)</label>
+        <p class="listino-foglio"><span class="etichetta">Listino della sede</span><strong>${v.listino ? h(v.listino) : "Non indicato"}</strong></p>
+        <div class="campo"><label class="etichetta" for="ipPrezzo">Il tuo prezzo (€)</label>
           <input id="ipPrezzo" type="text" inputmode="decimal" autocomplete="off" placeholder="0,00" value="${h(x.prezzo || "")}"></div>
         <div class="campo"><label class="etichetta" for="ipNota">Nota</label>
           <input id="ipNota" type="text" autocomplete="off" placeholder="es. per confezione da 12" value="${h(x.nota || "")}" maxlength="120"></div>
         <p class="nota" id="ipErrore" role="alert"></p>
         <div class="dialogo-azioni"><button class="btn btn-secondario" type="button" id="ipAnnulla">Annulla</button>
           <button class="btn btn-primario" type="button" id="ipSalva">Salva</button></div>
-        ${x.prezzo || x.nota ? `<button class="btn btn-secondario" type="button" id="ipTogli">Togli il prezzo</button>` : ""}`);
+        ${x.prezzo || x.nota ? `<button class="btn btn-secondario" type="button" id="ipTogli">${v.listino ? "Torna al listino" : "Togli il prezzo"}</button>` : ""}`);
       const salva = async (valore) => {
         const tutti = await DB.leggi("info-prezzi", {});
         if (valore) tutti[id] = valore; else delete tutti[id];

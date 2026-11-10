@@ -1,7 +1,7 @@
 // Service worker: tiene in memoria i file dell'app per aprirla anche senza rete.
 // Le chiamate al server (/api/) passano sempre dalla rete e non vengono mai salvate.
 // Ad ogni rilascio aumentare VERSIONE: i telefoni scaricano la nuova versione alla prossima apertura.
-const VERSIONE = "interviste-fiera-v1.7.0";
+const VERSIONE = "interviste-fiera-v1.7.2";
 const FILE_APP = [
   "./",
   "index.html",
