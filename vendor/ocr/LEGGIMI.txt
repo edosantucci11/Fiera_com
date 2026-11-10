@@ -1,0 +1,10 @@
+Lettura del testo dei biglietti da visita sul telefono, senza rete.
+
+tesseract.min.js, worker.min.js   Tesseract.js 7.0.0 (licenza Apache 2.0, vedi LICENSE-tesseract.js.md)
+core/                              Tesseract.js-core 7.0.0, motore di riconoscimento in WebAssembly (Apache 2.0, core/LICENSE).
+                                   Il telefono scarica una sola delle tre varianti, quella adatta al suo processore.
+lang/                              Dati di lingua italiano e inglese "best_int" del progetto Tesseract OCR (Apache 2.0),
+                                   dal pacchetto @tesseract.js-data 1.0.0.
+
+I file si scaricano sul telefono solo la prima volta che si legge un biglietto (circa 8 MB in tutto),
+oppure in anticipo da Impostazioni > Lettura dei biglietti; poi funzionano anche senza rete.
