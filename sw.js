@@ -1,34 +1,15 @@
 // Service worker: tiene in memoria i file dell'app per aprirla anche senza rete.
 // Le chiamate al server (/api/) passano sempre dalla rete e non vengono mai salvate.
 // Ad ogni rilascio aumentare VERSIONE: i telefoni scaricano la nuova versione alla prossima apertura.
-const VERSIONE = "interviste-fiera-v1.7.3";
+const VERSIONE = "interviste-fiera-v1.7.4";
 const FILE_APP = [
   "./",
   "index.html",
-  "styles.css",
-  "config.js",
-  "schema.js",
-  "info-dati.js",
-  "mappa-mondo.js",
   "manifest.webmanifest",
-  "icons/icon.svg",
   "icons/icon-180.png",
   "icons/icon-192.png",
   "icons/icon-512.png",
-  "icons/assut-europe.png",
-  "vendor/jsQR.js",
-  "js/qr.js",
-  "js/ocr.js",
-  "vendor/ocr/tesseract.min.js",
-  "vendor/ocr/worker.min.js",
-  "js/tema.js",
-  "js/util.js",
-  "js/db.js",
-  "js/adapters/demo.js",
-  "js/adapters/server.js",
-  "js/adapters/file.js",
-  "js/sync.js",
-  "js/app.js"
+  "vendor/ocr/worker.min.js"
 ];
 const FONT = /^https:\/\/fonts\.(googleapis|gstatic)\.com\//;
 
