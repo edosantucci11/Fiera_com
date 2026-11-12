@@ -3,7 +3,7 @@
 <!-- Interviste Fiera – app del telefono in un unico file (generato da strumenti/costruisci_app.py). I campi della scheda sono nello script con id schema-scheda. -->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-VVTRzSsISOrc2zA/8XnAf9KOnmEQe7qCFrMQCpzTZFE=' 'sha256-EMuToTPSYJrcOL2Y3uB25W4wLP0JmZ0E9xCNj4C15GU=' 'sha256-x4DFrbUnkyx6WAX+rkKi5KE/Pi2idcCcKa1fS0XrJqM=' 'sha256-1VfYTaKcPnOyXaE6dpWKDw68oOVmq0VUFt5BrEOmHm8=' 'sha256-0dqxe54SRrBVRi3hKIvfJxxUQpIA9LF9uoWXek10q94=' 'sha256-bna9o8oqfQkWjhmLbeF0P074UlkqOAmJkh3WGl9rMmI=' 'sha256-l9AgzJNE2xlT5Uqscn2WvgO1Th5NrobBEd9Zp+6rU2M=' 'sha256-hwVksVTLJal5nGiUXwmaCInLRWkAHsLLTBiLEeuI/68=' 'sha256-jvAyMjTSooxJzDDCwd1lTM1KYGElOC6WlfJP82vZgMc=' 'sha256-xNivlCXKH5r9vrm7NvMvsg9xDE0PJpOzNIGi52L1aGo=' 'sha256-sjdsNrHvNfObz2DBzWSdZRCgIcl1b5M1ofhxSoN6pRY=' 'sha256-Fog4vmyLGq7mhRjYaUxcAdJqUKgAq+CsTdZ7qo7eQxY=' 'sha256-SZcAUWGfdCdYCGkl4WfXskRowuqaqSU/pGmancajX14=' 'sha256-s4mKvZxmN/L6xq7nlpEsGvHHxcw1GgoscwGf5cD+Ho0=' 'sha256-Qg0C0HMipaIDaOQfsqxbFJ74/NIPhjgxqbkJWaprErk=' 'sha256-3plKRJOgxITzH9MY2MN8skf00I8J4hM50//9E6X9kGc='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-VVTRzSsISOrc2zA/8XnAf9KOnmEQe7qCFrMQCpzTZFE=' 'sha256-EMuToTPSYJrcOL2Y3uB25W4wLP0JmZ0E9xCNj4C15GU=' 'sha256-JhMF8wd+c+RrCpjD4x7NnNUjNi48HaZI2tLq4pzirNU=' 'sha256-1VfYTaKcPnOyXaE6dpWKDw68oOVmq0VUFt5BrEOmHm8=' 'sha256-0dqxe54SRrBVRi3hKIvfJxxUQpIA9LF9uoWXek10q94=' 'sha256-bna9o8oqfQkWjhmLbeF0P074UlkqOAmJkh3WGl9rMmI=' 'sha256-l9AgzJNE2xlT5Uqscn2WvgO1Th5NrobBEd9Zp+6rU2M=' 'sha256-hwVksVTLJal5nGiUXwmaCInLRWkAHsLLTBiLEeuI/68=' 'sha256-jvAyMjTSooxJzDDCwd1lTM1KYGElOC6WlfJP82vZgMc=' 'sha256-xNivlCXKH5r9vrm7NvMvsg9xDE0PJpOzNIGi52L1aGo=' 'sha256-sjdsNrHvNfObz2DBzWSdZRCgIcl1b5M1ofhxSoN6pRY=' 'sha256-Fog4vmyLGq7mhRjYaUxcAdJqUKgAq+CsTdZ7qo7eQxY=' 'sha256-SZcAUWGfdCdYCGkl4WfXskRowuqaqSU/pGmancajX14=' 'sha256-s4mKvZxmN/L6xq7nlpEsGvHHxcw1GgoscwGf5cD+Ho0=' 'sha256-Qg0C0HMipaIDaOQfsqxbFJ74/NIPhjgxqbkJWaprErk=' 'sha256-YJ3ZzmDnfld9dZw7GIdwHou0LZHtSSGBOvldDgVKpgc='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <title>Interviste Fiera</title>
   <meta name="theme-color" content="#0F1115" media="(prefers-color-scheme: dark)">
@@ -742,6 +742,15 @@ input[readonly] { color: var(--t3); }
 .btn-mappa .icona { width: 20px; height: 20px; }
 .legenda-mappa { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 0.8125rem; color: var(--t2); }
 .legenda-mappa li { display: inline-flex; align-items: center; gap: 6px; }
+.legenda-sigle { margin-top: 4px; padding: 12px 14px; border-radius: var(--r-c); background: var(--s1); }
+.legenda-sigle h3 { margin: 0 0 8px; font-size: 0.8125rem; font-weight: 650; color: var(--t2); letter-spacing: .04em; }
+.legenda-sigle dl { margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px 14px; }
+.legenda-sigle dl div { display: flex; gap: 8px; align-items: baseline; font-size: 0.875rem; }
+.legenda-sigle dt { font-weight: 700; color: var(--accent-testo); white-space: nowrap; }
+.legenda-sigle dd { margin: 0; color: var(--t1); }
+.legenda-sigle .nota { margin: 10px 0 0; }
+.avviso-versione { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(96px + env(safe-area-inset-bottom, 0px)); z-index: 60;
+  display: flex; align-items: center; gap: 12px; padding: 10px 12px 10px 16px; border-radius: var(--r-q); max-width: calc(100vw - 32px); font-size: 0.9375rem; }
 .scheda-mappa { position: relative; }
 .scheda-mappa .carta-paese { border: 1px solid var(--bordo-forte); padding-right: 56px; }
 .chiudi-scheda { position: absolute; top: 10px; right: 10px; }
@@ -11125,7 +11134,7 @@ window.APP_CONFIG = {
   modalita: "file",
 
   nomeApp: "Interviste Fiera",
-  versioneApp: "1.7.7",
+  versioneApp: "1.7.8",
 
   // Indirizzo delle funzioni del server, relativo alla pagina dell'app (/app/ -> /api/).
   server: {
@@ -13977,8 +13986,26 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
 
     try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); } catch (e) {}
     if ("serviceWorker" in navigator && location.protocol === "https:") {
-      navigator.serviceWorker.register("sw.js").catch(() => {});
+      // aggiornamenti: quando su GitHub c'è una versione nuova, l'app la usa subito (non alla seconda apertura).
+      // Su una scheda aperta non si ricarica: compare un avviso con «Aggiorna».
+      const eraControllata = !!navigator.serviceWorker.controller;
+      let ricaricando = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (!eraControllata || ricaricando) return;
+        if (vistaCorrente() === "scheda") { avvisoAggiornamento(); return; }
+        ricaricando = true; location.reload();
+      });
+      navigator.serviceWorker.register("sw.js").then((reg) => {
+        // l'app installata resta aperta in sottofondo: al ritorno si controlla se c'è una versione nuova
+        document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") reg.update().catch(() => {}); });
+      }).catch(() => {});
     }
+    // tablet: l'app gira anche in orizzontale. Serve per le app già installate con la vecchia impostazione «solo
+    // verticale», che Android aggiorna solo dopo un po'; il telefono resta come decide il sistema.
+    try {
+      if (window.matchMedia("(display-mode: standalone), (display-mode: fullscreen)").matches && Math.min(screen.width, screen.height) >= 600
+        && screen.orientation && screen.orientation.lock) screen.orientation.lock("any").catch(() => {});
+    } catch (e) {}
 
     IF.eventi.on("lista", () => { if (vistaCorrente() === "lista") disegnaElenco(); aggiornaStrisciaInvio(); aggiornaTabbar(); });
     IF.eventi.on("scheda", (id) => { if (location.hash === `#scheda/${id}`) aggiornaStatoEditor(id); });
@@ -14251,6 +14278,15 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
     barra.innerHTML = `
       <span class="targa-logo"><img src="${LOGO}" alt="Assut Europe – Suture chirurgiche" width="124" height="28"></span>
       ${IF.impostazioni.fiera ? `<span class="chip-fiera">${icona("luogo")}<span>${h(IF.impostazioni.fiera)}</span></span>` : ""}`;
+  }
+
+  function avvisoAggiornamento() {
+    if (document.getElementById("avvisoVersione")) return;
+    const d = document.createElement("div");
+    d.id = "avvisoVersione"; d.className = "avviso-versione vetro forte"; d.setAttribute("role", "status");
+    d.innerHTML = `<span>È pronta una versione nuova dell'app.</span><button class="btn btn-primario piccolo" type="button">Aggiorna</button>`;
+    d.querySelector("button").onclick = () => location.reload();
+    document.body.appendChild(d);
   }
 
   // ---------- Versione sul condiviso: l'app si usa dopo aver inquadrato il QR del proprio account ----------
@@ -15794,8 +15830,12 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
         <ul class="legenda-mappa">
           <li><i class="pallino-accordo esclusivo"></i>Esclusivo</li><li><i class="pallino-accordo non_esclusivo"></i>Non esclusivo</li>
           <li><i class="pallino-accordo registrazione"></i>Registrazione / prospect</li><li><i class="pallino-accordo non_indicato"></i>Non indicato</li>
-          <li><span class="linea fuori-legenda">GEX</span>Sigla fuori legenda</li>
         </ul>
+        <div class="legenda-sigle">
+          <h3>Sigle delle linee</h3>
+          <dl>${Object.entries(R.linee).map(([k, v]) => `<div><dt>${h(k)}</dt><dd>${h(v)}</dd></div>`).join("")}</dl>
+          <p class="nota"><span class="linea fuori-legenda">IN ROSSO</span> sigle che non sono nella legenda dell'elenco della sede: ${h([...new Set(R.paesi.flatMap((r) => r.linee.filter((l) => !lineeNote.has(l))))].join(", "))}.</p>
+        </div>
         <p class="nota">Tocca un paese colorato per vederne i dati. Due dita per ingrandire e spostare.</p>
         <div id="mappaScheda"></div>
       </section>` : ""}
