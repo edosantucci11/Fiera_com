@@ -3,8 +3,8 @@
 <!-- Interviste Fiera – app del telefono in un unico file (generato da strumenti/costruisci_app.py). I campi della scheda sono nello script con id schema-scheda. -->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-VVTRzSsISOrc2zA/8XnAf9KOnmEQe7qCFrMQCpzTZFE=' 'sha256-EMuToTPSYJrcOL2Y3uB25W4wLP0JmZ0E9xCNj4C15GU=' 'sha256-QpF1nYpxJHcPegf9EwMv5iFvuHHP6mxZupDLtmy2FeE=' 'sha256-1VfYTaKcPnOyXaE6dpWKDw68oOVmq0VUFt5BrEOmHm8=' 'sha256-0dqxe54SRrBVRi3hKIvfJxxUQpIA9LF9uoWXek10q94=' 'sha256-bna9o8oqfQkWjhmLbeF0P074UlkqOAmJkh3WGl9rMmI=' 'sha256-l9AgzJNE2xlT5Uqscn2WvgO1Th5NrobBEd9Zp+6rU2M=' 'sha256-hwVksVTLJal5nGiUXwmaCInLRWkAHsLLTBiLEeuI/68=' 'sha256-jvAyMjTSooxJzDDCwd1lTM1KYGElOC6WlfJP82vZgMc=' 'sha256-xNivlCXKH5r9vrm7NvMvsg9xDE0PJpOzNIGi52L1aGo=' 'sha256-sjdsNrHvNfObz2DBzWSdZRCgIcl1b5M1ofhxSoN6pRY=' 'sha256-Fog4vmyLGq7mhRjYaUxcAdJqUKgAq+CsTdZ7qo7eQxY=' 'sha256-SZcAUWGfdCdYCGkl4WfXskRowuqaqSU/pGmancajX14=' 'sha256-s4mKvZxmN/L6xq7nlpEsGvHHxcw1GgoscwGf5cD+Ho0=' 'sha256-Qg0C0HMipaIDaOQfsqxbFJ74/NIPhjgxqbkJWaprErk=' 'sha256-Df5xqMVeFE+SWbnOsbPWxaWqPp8CLD1TXbuqSRBDY6E='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-VVTRzSsISOrc2zA/8XnAf9KOnmEQe7qCFrMQCpzTZFE=' 'sha256-EMuToTPSYJrcOL2Y3uB25W4wLP0JmZ0E9xCNj4C15GU=' 'sha256-x4DFrbUnkyx6WAX+rkKi5KE/Pi2idcCcKa1fS0XrJqM=' 'sha256-1VfYTaKcPnOyXaE6dpWKDw68oOVmq0VUFt5BrEOmHm8=' 'sha256-0dqxe54SRrBVRi3hKIvfJxxUQpIA9LF9uoWXek10q94=' 'sha256-bna9o8oqfQkWjhmLbeF0P074UlkqOAmJkh3WGl9rMmI=' 'sha256-l9AgzJNE2xlT5Uqscn2WvgO1Th5NrobBEd9Zp+6rU2M=' 'sha256-hwVksVTLJal5nGiUXwmaCInLRWkAHsLLTBiLEeuI/68=' 'sha256-jvAyMjTSooxJzDDCwd1lTM1KYGElOC6WlfJP82vZgMc=' 'sha256-xNivlCXKH5r9vrm7NvMvsg9xDE0PJpOzNIGi52L1aGo=' 'sha256-sjdsNrHvNfObz2DBzWSdZRCgIcl1b5M1ofhxSoN6pRY=' 'sha256-Fog4vmyLGq7mhRjYaUxcAdJqUKgAq+CsTdZ7qo7eQxY=' 'sha256-SZcAUWGfdCdYCGkl4WfXskRowuqaqSU/pGmancajX14=' 'sha256-s4mKvZxmN/L6xq7nlpEsGvHHxcw1GgoscwGf5cD+Ho0=' 'sha256-Qg0C0HMipaIDaOQfsqxbFJ74/NIPhjgxqbkJWaprErk=' 'sha256-3plKRJOgxITzH9MY2MN8skf00I8J4hM50//9E6X9kGc='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <title>Interviste Fiera</title>
   <meta name="theme-color" content="#0F1115" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#F3F4F7" media="(prefers-color-scheme: light)">
@@ -992,6 +992,13 @@ html.crescita-nativa textarea { field-sizing: content; min-height: 80px; }
   /* Riepilogo e Impostazioni: tre colonne non servono, si tengono due più larghe */
   .vista[data-v="riepilogo"], .vista[data-v="impostazioni"] { column-gap: 24px; }
 }
+
+/* ================================================================ niente zoom della pagina
+   Pagina ferma come un'app: niente zoom con due dita né con il doppio tocco (la mappa ha il suo zoom).
+   Su iPhone serve anche lo script in app.js (gesturestart) e testo dei campi di almeno 16 px, sotto i quali
+   Safari ingrandisce da solo la pagina quando si tocca un campo. */
+html, body { touch-action: pan-x pan-y; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+input, textarea, select { font-size: max(16px, 1rem); }
 
 </style>
 </head>
@@ -11118,7 +11125,7 @@ window.APP_CONFIG = {
   modalita: "file",
 
   nomeApp: "Interviste Fiera",
-  versioneApp: "1.7.6",
+  versioneApp: "1.7.7",
 
   // Indirizzo delle funzioni del server, relativo alla pagina dell'app (/app/ -> /api/).
   server: {
@@ -13985,6 +13992,11 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
     const conto = FILE ? codiceAccount(location.hash) : null;
     if (codice || conto) { try { history.replaceState(null, "", location.href.split("#")[0].split("?")[0]); } catch (e) { location.hash = ""; } }
     if (conto) await collegaAccount(conto);
+    // niente zoom della pagina: Safari su iPhone ignora user-scalable=no, quindi si fermano i suoi gesti di zoom
+    // (la mappa usa i pointer events e continua a ingrandirsi con due dita)
+    for (const ev of ["gesturestart", "gesturechange", "gestureend"]) document.addEventListener(ev, (e) => e.preventDefault(), { passive: false });
+    document.addEventListener("touchmove", (e) => { if (e.scale !== undefined && e.scale !== 1) e.preventDefault(); }, { passive: false });
+    // il doppio tocco lo blocca il CSS (touch-action), così i tocchi veloci sui pulsanti non si perdono
     window.addEventListener("hashchange", async () => {
       // QR dell'account aperto mentre l'app è già aperta (stessa pagina, cambia solo la parte dopo #)
       const nuovo = FILE ? codiceAccount(location.hash) : null;
