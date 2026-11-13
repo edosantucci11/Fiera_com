@@ -3,7 +3,7 @@
 <!-- Interviste Fiera – app del telefono in un unico file (generato da strumenti/costruisci_app.py). I campi della scheda sono nello script con id schema-scheda. -->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-VVTRzSsISOrc2zA/8XnAf9KOnmEQe7qCFrMQCpzTZFE=' 'sha256-EMuToTPSYJrcOL2Y3uB25W4wLP0JmZ0E9xCNj4C15GU=' 'sha256-JhMF8wd+c+RrCpjD4x7NnNUjNi48HaZI2tLq4pzirNU=' 'sha256-1VfYTaKcPnOyXaE6dpWKDw68oOVmq0VUFt5BrEOmHm8=' 'sha256-0dqxe54SRrBVRi3hKIvfJxxUQpIA9LF9uoWXek10q94=' 'sha256-bna9o8oqfQkWjhmLbeF0P074UlkqOAmJkh3WGl9rMmI=' 'sha256-l9AgzJNE2xlT5Uqscn2WvgO1Th5NrobBEd9Zp+6rU2M=' 'sha256-hwVksVTLJal5nGiUXwmaCInLRWkAHsLLTBiLEeuI/68=' 'sha256-jvAyMjTSooxJzDDCwd1lTM1KYGElOC6WlfJP82vZgMc=' 'sha256-xNivlCXKH5r9vrm7NvMvsg9xDE0PJpOzNIGi52L1aGo=' 'sha256-sjdsNrHvNfObz2DBzWSdZRCgIcl1b5M1ofhxSoN6pRY=' 'sha256-Fog4vmyLGq7mhRjYaUxcAdJqUKgAq+CsTdZ7qo7eQxY=' 'sha256-SZcAUWGfdCdYCGkl4WfXskRowuqaqSU/pGmancajX14=' 'sha256-s4mKvZxmN/L6xq7nlpEsGvHHxcw1GgoscwGf5cD+Ho0=' 'sha256-Qg0C0HMipaIDaOQfsqxbFJ74/NIPhjgxqbkJWaprErk=' 'sha256-YJ3ZzmDnfld9dZw7GIdwHou0LZHtSSGBOvldDgVKpgc='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-VVTRzSsISOrc2zA/8XnAf9KOnmEQe7qCFrMQCpzTZFE=' 'sha256-EMuToTPSYJrcOL2Y3uB25W4wLP0JmZ0E9xCNj4C15GU=' 'sha256-DbBDWvFJa84Ow7xSdICcXk4+a4bTY5A07z7udv6iuTA=' 'sha256-nXgIbfYtu03hH9mJDCHlpSwUbQJF3yHYXNihh7j1mXw=' 'sha256-0dqxe54SRrBVRi3hKIvfJxxUQpIA9LF9uoWXek10q94=' 'sha256-bna9o8oqfQkWjhmLbeF0P074UlkqOAmJkh3WGl9rMmI=' 'sha256-mmwqC5KSmUwwt+MzEMS2wculy49Rm5iITw/Ax4b7Vag=' 'sha256-hwVksVTLJal5nGiUXwmaCInLRWkAHsLLTBiLEeuI/68=' 'sha256-jvAyMjTSooxJzDDCwd1lTM1KYGElOC6WlfJP82vZgMc=' 'sha256-xNivlCXKH5r9vrm7NvMvsg9xDE0PJpOzNIGi52L1aGo=' 'sha256-sjdsNrHvNfObz2DBzWSdZRCgIcl1b5M1ofhxSoN6pRY=' 'sha256-Fog4vmyLGq7mhRjYaUxcAdJqUKgAq+CsTdZ7qo7eQxY=' 'sha256-SZcAUWGfdCdYCGkl4WfXskRowuqaqSU/pGmancajX14=' 'sha256-s4mKvZxmN/L6xq7nlpEsGvHHxcw1GgoscwGf5cD+Ho0=' 'sha256-Qg0C0HMipaIDaOQfsqxbFJ74/NIPhjgxqbkJWaprErk=' 'sha256-A2g4gBC8K+mBEJxL/Xy+Ew3LRL/KPfW80TyAdcCKJpU='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <title>Interviste Fiera</title>
   <meta name="theme-color" content="#0F1115" media="(prefers-color-scheme: dark)">
@@ -166,7 +166,7 @@
   --mappa-mare: #E4EBF4; --mappa-terra: #C9D1DC; --mappa-confine: #F7F9FC;
   --ok: #178A4C; --ok-t: rgba(23, 138, 76, 0.10);
   --att: #965A00; --att-t: rgba(150, 90, 0, 0.10);
-  --err: #D12F2F; --err-t: rgba(209, 47, 47, 0.08);
+  --err: #C42828; --err-t: rgba(196, 40, 40, 0.08);
   color-scheme: light;
 } }
 :root[data-tema="chiaro"] {
@@ -209,7 +209,7 @@
   --mappa-mare: #E4EBF4; --mappa-terra: #C9D1DC; --mappa-confine: #F7F9FC;
   --ok: #178A4C; --ok-t: rgba(23, 138, 76, 0.10);
   --att: #965A00; --att-t: rgba(150, 90, 0, 0.10);
-  --err: #D12F2F; --err-t: rgba(209, 47, 47, 0.08);
+  --err: #C42828; --err-t: rgba(196, 40, 40, 0.08);
   color-scheme: light;
 }
 @media (min-width: 428px) { :root { --gutter-l: max(20px, env(safe-area-inset-left, 0px)); --gutter-r: max(20px, env(safe-area-inset-right, 0px)); } }
@@ -743,7 +743,7 @@ input[readonly] { color: var(--t3); }
 .legenda-mappa { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 0.8125rem; color: var(--t2); }
 .legenda-mappa li { display: inline-flex; align-items: center; gap: 6px; }
 .legenda-sigle { margin-top: 4px; padding: 12px 14px; border-radius: var(--r-c); background: var(--s1); }
-.legenda-sigle h3 { margin: 0 0 8px; font-size: 0.8125rem; font-weight: 650; color: var(--t2); letter-spacing: .04em; }
+.legenda-sigle h2 { margin: 0 0 8px; font-size: 0.8125rem; font-weight: 650; color: var(--t2); letter-spacing: .04em; }
 .legenda-sigle dl { margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px 14px; }
 .legenda-sigle dl div { display: flex; gap: 8px; align-items: baseline; font-size: 0.875rem; }
 .legenda-sigle dt { font-weight: 700; color: var(--accent-testo); white-space: nowrap; }
@@ -11134,7 +11134,7 @@ window.APP_CONFIG = {
   modalita: "file",
 
   nomeApp: "Interviste Fiera",
-  versioneApp: "1.7.8",
+  versioneApp: "1.7.9",
 
   // Indirizzo delle funzioni del server, relativo alla pagina dell'app (/app/ -> /api/).
   server: {
@@ -11180,10 +11180,10 @@ window.SCHEDA_SCHEMA = {
       "titolo": "Contatto",
       "scansioneQr": true,
       "campi": [
-        {"id": "nome", "etichetta": "Nome e cognome", "tipo": "testo", "obbligatorio": true, "sp": "ContattoNome"},
-        {"id": "azienda", "etichetta": "Azienda", "tipo": "testo", "obbligatorio": true, "sp": "Azienda"},
+        {"id": "nome", "etichetta": "Nome e cognome", "tipo": "testo", "sp": "ContattoNome"},
+        {"id": "azienda", "etichetta": "Azienda", "tipo": "testo", "sp": "Azienda"},
         {"id": "ruolo", "etichetta": "Ruolo", "tipo": "testo", "sp": "Ruolo"},
-        {"id": "paese", "etichetta": "Paese", "tipo": "testo", "sp": "Paese"},
+        {"id": "paese", "etichetta": "Paese", "tipo": "testo", "obbligatorio": true, "sp": "Paese"},
         {"id": "email", "etichetta": "Email", "tipo": "email", "sp": "Email"},
         {"id": "telefono", "etichetta": "Telefono", "tipo": "telefono", "sp": "Telefono"},
         {"id": "note_contatto", "etichetta": "Note", "tipo": "testolungo", "nota": true, "sp": "NoteContatto"}
@@ -12919,7 +12919,9 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
     const parti = (schema.titoloScheda || [])
       .map((id) => (scheda.dati[id] || "").toString().trim())
       .filter(Boolean);
-    return parti.length ? parti.join(" – ") : "Intervista senza nome";
+    if (parti.length) return parti.join(" – ");
+    const paese = (scheda.dati.paese || "").toString().trim();   // senza nome né azienda: almeno il paese, che è obbligatorio
+    return paese ? `Senza nome · ${paese}` : "Intervista senza nome";
   }
 
   // Campi "piatti" della scheda (colonne di sistema + campi dello schema), usati dalla modalita' dimostrazione.
@@ -14554,11 +14556,12 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
       <ul class="elenco">${lista.map((s) => {
         const nAll = tutti.filter((a) => a.schedaId === s.id).length;
         const valColonna = colonna ? s.dati[colonna.id] : "";
-        const sotto = [s.dati.nome, Array.isArray(valColonna) ? valColonna.join(", ") : valColonna].filter(Boolean).join(" · ");
+        const nomeS = String(s.dati.nome || "").trim(), aziendaS = String(s.dati.azienda || "").trim(), paeseS = String(s.dati.paese || "").trim();
+        const sotto = [aziendaS ? nomeS : "", paeseS, Array.isArray(valColonna) ? valColonna.join(", ") : valColonna].filter(Boolean).join(" · ");
         return `<li><a class="riga" href="#scheda/${encodeURIComponent(s.id)}">
           ${prioritaHtml(s.dati)}
           <span class="riga-corpo">
-            <span class="riga-titolo">${h(s.dati.azienda || "Azienda non indicata")}${s.esempio ? `<span class="tag-esempio">Esempio</span>` : ""}</span>
+            <span class="riga-titolo">${h(aziendaS || nomeS || (paeseS ? `Senza nome · ${paeseS}` : "Senza nome"))}${s.esempio ? `<span class="tag-esempio">Esempio</span>` : ""}</span>
             <span class="riga-sotto">${h(sotto || "Contatto non indicato")}</span>
             <span class="riga-meta"><span>${IF.ora(s.intervistaIl)}</span>${livelloHtml(s.dati)}${nAll ? `<span>${nAll} ${nAll === 1 ? "allegato" : "allegati"}</span>` : ""}${s.sunto ? `<span class="meta-sunto">${icona("scintilla")}Sunto</span>` : ""}</span>
           </span>
@@ -15832,7 +15835,7 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
           <li><i class="pallino-accordo registrazione"></i>Registrazione / prospect</li><li><i class="pallino-accordo non_indicato"></i>Non indicato</li>
         </ul>
         <div class="legenda-sigle">
-          <h3>Sigle delle linee</h3>
+          <h2>Sigle delle linee</h2>
           <dl>${Object.entries(R.linee).map(([k, v]) => `<div><dt>${h(k)}</dt><dd>${h(v)}</dd></div>`).join("")}</dl>
           <p class="nota"><span class="linea fuori-legenda">IN ROSSO</span> sigle che non sono nella legenda dell'elenco della sede: ${h([...new Set(R.paesi.flatMap((r) => r.linee.filter((l) => !lineeNote.has(l))))].join(", "))}.</p>
         </div>
