@@ -1,7 +1,7 @@
 // Service worker: tiene in memoria i file dell'app per aprirla anche senza rete.
 // Le chiamate al server (/api/) passano sempre dalla rete e non vengono mai salvate.
 // Ad ogni rilascio aumentare VERSIONE: i telefoni scaricano la nuova versione alla prossima apertura.
-const VERSIONE = "interviste-fiera-v1.7.9";
+const VERSIONE = "interviste-fiera-v1.7.10";
 const FILE_APP = [
   "./",
   "index.html",
@@ -13,8 +13,25 @@ const FILE_APP = [
 ];
 const FONT = /^https:\/\/fonts\.(googleapis|gstatic)\.com\//;
 
+// I file si scaricano sempre freschi dal sito (con «?v=» GitHub non può dare una copia vecchia dalla sua memoria)
+// e si controlla che la pagina sia proprio di questa versione: se il sito non è ancora aggiornato
+// l'installazione non va avanti, il telefono tiene la versione che ha e riprova alla prossima apertura.
+const NUMERO = VERSIONE.replace("interviste-fiera-v", "");
 self.addEventListener("install", (e) => {
-  e.waitUntil(caches.open(VERSIONE).then((c) => c.addAll(FILE_APP)).then(() => self.skipWaiting()));
+  e.waitUntil((async () => {
+    const c = await caches.open(VERSIONE);
+    const scaricati = await Promise.all(FILE_APP.map(async (f) => {
+      const r = await fetch(new Request(f + (f.includes("?") ? "&" : "?") + "v=" + NUMERO, { cache: "reload" }));
+      if (!r.ok) throw new Error(`${f}: ${r.status}`);
+      if (/(^|\/)$|\.html$|config\.js$/.test(f)) {
+        const testo = await r.clone().text();
+        if (testo.includes("versioneApp:") && !testo.includes(`versioneApp: "${NUMERO}"`)) throw new Error(`${f}: non ancora alla versione ${NUMERO}`);
+      }
+      return [f, r];
+    }));
+    for (const [f, r] of scaricati) await c.put(f, r);
+    await self.skipWaiting();
+  })());
 });
 
 self.addEventListener("activate", (e) => {
