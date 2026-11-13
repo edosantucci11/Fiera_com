@@ -3,7 +3,7 @@
 <!-- Interviste Fiera – app del telefono in un unico file (generato da strumenti/costruisci_app.py). I campi della scheda sono nello script con id schema-scheda. -->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-VVTRzSsISOrc2zA/8XnAf9KOnmEQe7qCFrMQCpzTZFE=' 'sha256-EMuToTPSYJrcOL2Y3uB25W4wLP0JmZ0E9xCNj4C15GU=' 'sha256-Cl3V6LNu8pvO5Nm1MTWfxRmZjts4bJSsLm4tpOOdxEM=' 'sha256-nXgIbfYtu03hH9mJDCHlpSwUbQJF3yHYXNihh7j1mXw=' 'sha256-0dqxe54SRrBVRi3hKIvfJxxUQpIA9LF9uoWXek10q94=' 'sha256-bna9o8oqfQkWjhmLbeF0P074UlkqOAmJkh3WGl9rMmI=' 'sha256-mmwqC5KSmUwwt+MzEMS2wculy49Rm5iITw/Ax4b7Vag=' 'sha256-hwVksVTLJal5nGiUXwmaCInLRWkAHsLLTBiLEeuI/68=' 'sha256-jvAyMjTSooxJzDDCwd1lTM1KYGElOC6WlfJP82vZgMc=' 'sha256-xNivlCXKH5r9vrm7NvMvsg9xDE0PJpOzNIGi52L1aGo=' 'sha256-sjdsNrHvNfObz2DBzWSdZRCgIcl1b5M1ofhxSoN6pRY=' 'sha256-Fog4vmyLGq7mhRjYaUxcAdJqUKgAq+CsTdZ7qo7eQxY=' 'sha256-SZcAUWGfdCdYCGkl4WfXskRowuqaqSU/pGmancajX14=' 'sha256-s4mKvZxmN/L6xq7nlpEsGvHHxcw1GgoscwGf5cD+Ho0=' 'sha256-Qg0C0HMipaIDaOQfsqxbFJ74/NIPhjgxqbkJWaprErk=' 'sha256-A2g4gBC8K+mBEJxL/Xy+Ew3LRL/KPfW80TyAdcCKJpU='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-VVTRzSsISOrc2zA/8XnAf9KOnmEQe7qCFrMQCpzTZFE=' 'sha256-EMuToTPSYJrcOL2Y3uB25W4wLP0JmZ0E9xCNj4C15GU=' 'sha256-bC/LydW48yotiqCmy6ZaZKAKBmHlH8NyxVgkbK6AExM=' 'sha256-nXgIbfYtu03hH9mJDCHlpSwUbQJF3yHYXNihh7j1mXw=' 'sha256-0dqxe54SRrBVRi3hKIvfJxxUQpIA9LF9uoWXek10q94=' 'sha256-bna9o8oqfQkWjhmLbeF0P074UlkqOAmJkh3WGl9rMmI=' 'sha256-mmwqC5KSmUwwt+MzEMS2wculy49Rm5iITw/Ax4b7Vag=' 'sha256-hwVksVTLJal5nGiUXwmaCInLRWkAHsLLTBiLEeuI/68=' 'sha256-jvAyMjTSooxJzDDCwd1lTM1KYGElOC6WlfJP82vZgMc=' 'sha256-xNivlCXKH5r9vrm7NvMvsg9xDE0PJpOzNIGi52L1aGo=' 'sha256-sjdsNrHvNfObz2DBzWSdZRCgIcl1b5M1ofhxSoN6pRY=' 'sha256-Fog4vmyLGq7mhRjYaUxcAdJqUKgAq+CsTdZ7qo7eQxY=' 'sha256-SZcAUWGfdCdYCGkl4WfXskRowuqaqSU/pGmancajX14=' 'sha256-s4mKvZxmN/L6xq7nlpEsGvHHxcw1GgoscwGf5cD+Ho0=' 'sha256-Qg0C0HMipaIDaOQfsqxbFJ74/NIPhjgxqbkJWaprErk=' 'sha256-Ft/LO+/cRzBxTQaMa9oFeDgzpHXlAq+/VGiWdaCgUmE='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <title>Interviste Fiera</title>
   <meta name="theme-color" content="#0F1115" media="(prefers-color-scheme: dark)">
@@ -910,6 +910,8 @@ input[readonly] { color: var(--t3); }
 .barra-azioni { transform: translateX(-50%) translateZ(0); }
 @media (prefers-reduced-motion: reduce) { .traccia.rivela::after { animation: none !important; display: none; } .tabbar-interno { transition: none !important; } }
 html.crescita-nativa textarea { field-sizing: content; min-height: 80px; }
+#impNoteApp { min-height: 128px; }
+html.crescita-nativa #impNoteApp { min-height: 128px; }
 
 /* guida all'installazione dell'app */
 .passi-installa { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; line-height: 1.45; }
@@ -11134,7 +11136,7 @@ window.APP_CONFIG = {
   modalita: "file",
 
   nomeApp: "Interviste Fiera",
-  versioneApp: "1.7.10",
+  versioneApp: "1.7.11",
 
   // Indirizzo delle funzioni del server, relativo alla pagina dell'app (/app/ -> /api/).
   server: {
@@ -15445,6 +15447,14 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
     const ocrPronto = !!window.SIM_OCR || await DB.leggi("ocr-pronto", false);
     const sp = CFG.modalita === "server" || FILE;
     const u = IF.adapter && IF.adapter.utente();
+    // le note si tengono anche in una copia immediata nel browser, che vince se è più recente (app chiusa di colpo)
+    let noteApp = await DB.leggi("note-app", {});
+    try {
+      const bozza = JSON.parse(localStorage.getItem("if-note-app") || "null");
+      if (bozza && typeof bozza.testo === "string" && (!noteApp.il || bozza.il > noteApp.il)) {
+        noteApp = bozza; await DB.scrivi("note-app", bozza);
+      }
+    } catch (e) { /* copia immediata non disponibile: resta quella salvata */ }
     barraPrincipale();
     vista.innerHTML = `
       <header class="titolo-grande"><h1>Impostazioni</h1></header>
@@ -15538,6 +15548,13 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
       </section>`}
 
       <section class="gruppo">
+        <h2>Note sull'app</h2>
+        <div class="campo"><label class="etichetta" for="impNoteApp">Suggerimenti per migliorarla</label>
+          <textarea id="impNoteApp" rows="5" placeholder="Cosa non va, cosa manca, cosa si potrebbe fare meglio…">${h(noteApp.testo || "")}</textarea></div>
+        <p class="nota" id="noteAppStato">${noteApp.il ? `Salvate su questo telefono · ${h(IF.dataOra(noteApp.il))}` : "Restano solo su questo telefono: non entrano nelle schede né nei file esportati."}</p>
+      </section>
+
+      <section class="gruppo">
         <h2>Informazioni</h2>
         <span class="targa-logo grande" style="align-self:flex-start"><img src="${LOGO}" alt="Assut Europe – Suture chirurgiche" width="195" height="44"></span>
         <dl class="riepilogo testo">
@@ -15559,6 +15576,27 @@ window.IF_MAPPA = {"larghezza":1000,"altezza":448,"paesi":{"100":{"n":"Bulgaria"
     };
     fiera.onchange = salvaImp; comp.onchange = salvaImp;
     fiera.oninput = salvaImp; comp.oninput = salvaImp;
+
+    // note sull'app: salvate mentre si scrive (con una breve pausa) e comunque quando si esce dal campo o dall'app
+    const noteEl = document.getElementById("impNoteApp"), noteStato = document.getElementById("noteAppStato");
+    let noteTimer = null, noteUltime = noteEl.value;
+    const salvaNote = async () => {
+      clearTimeout(noteTimer); noteTimer = null;
+      if (noteEl.value === noteUltime) return;
+      noteUltime = noteEl.value;
+      const il = new Date().toISOString();
+      await DB.scrivi("note-app", { testo: noteUltime, il });
+      try { if (noteEl.value === noteUltime) localStorage.removeItem("if-note-app"); } catch (e) { /* niente */ }
+      if (noteStato.isConnected) noteStato.textContent = `Salvate su questo telefono · ${IF.dataOra(il)}`;
+    };
+    noteEl.oninput = () => {
+      try { localStorage.setItem("if-note-app", JSON.stringify({ testo: noteEl.value, il: new Date().toISOString() })); } catch (e) { /* niente */ }
+      clearTimeout(noteTimer); noteTimer = setTimeout(salvaNote, 600);
+    };
+    noteEl.onblur = salvaNote;
+    window.addEventListener("pagehide", salvaNote, { once: true });
+    window.addEventListener("hashchange", salvaNote, { once: true });
+    document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") salvaNote(); }, { once: true });
 
     const off = document.getElementById("impOffline");
     if (off) off.onchange = async () => {
